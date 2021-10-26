@@ -1,0 +1,5 @@
+import juuxel.loomquiltflowermini.remap.LqfMiniLogicExtension
+import juuxel.loomquiltflowermini.remap.RemapSetup
+
+RemapSetup.setup(project)
+extensions.add("lqfMiniLogic", new LqfMiniLogicExtension(project))
