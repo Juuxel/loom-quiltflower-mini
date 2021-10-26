@@ -24,6 +24,10 @@ java {
     targetCompatibility = JavaVersion.VERSION_16
 }
 
+if (file("private.gradle").exists()) {
+    apply(from = "private.gradle")
+}
+
 repositories {
     mavenCentral()
     maven("https://maven.fabricmc.net")
@@ -62,5 +66,19 @@ pluginBundle {
 
     plugins.named("lqfMiniPlugin") {
         displayName = "loom-quiltflower-mini"
+    }
+}
+
+if (project.hasProperty("mavenUrl")) {
+    publishing {
+        repositories {
+            maven {
+                url = uri(project.property("mavenUrl").toString())
+                credentials {
+                    username = project.property("mavenUsername").toString()
+                    password = project.property("mavenPassword").toString()
+                }
+            }
+        }
     }
 }

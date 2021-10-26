@@ -9,7 +9,9 @@ an unconfigurable version of LQF to support 0.10.
 
 ## Usage
 
-loom-quiltflower-mini is available on the Gradle plugin portal.
+loom-quiltflower-mini is available in the Cotton maven repository
+(see instructions on [the main repo](https://github.com/Juuxel/LoomQuiltflower/)).
+If/when approved, it'll also be available on the Gradle plugin portal.
 
 ```kotlin
 plugins {
