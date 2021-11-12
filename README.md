@@ -15,8 +15,22 @@ If/when approved, it'll also be available on the Gradle plugin portal.
 
 ```kotlin
 plugins {
-    id("io.github.juuxel.loom-quiltflower-mini") version "1.0.0"
+    id("io.github.juuxel.loom-quiltflower-mini") version "1.1.0"
 }
 ```
 
 You can generate the sources by using the `genSourcesWithQuiltflower` task.
+
+**New in 1.1!**
+
+You can add Quiltflower to the runtime classpath with a single property
+to use it for decompiling mixins:
+
+```kotlin
+quiltflower {
+    addToRuntimeClasspath.set(true)
+}
+```
+
+> You also need the system property `mixin.debug` or `mixin.debug.decompile` 
+> in your run configurations.
