@@ -33,6 +33,10 @@ public final class QuiltflowerDecompiler implements LoomDecompiler {
         options.put(IFernflowerPreferences.THREADS, Integer.toString(metaData.numberOfThreads()));
         options.put(IFabricJavadocProvider.PROPERTY_NAME, new QfTinyJavadocProvider(metaData.javaDocs().toFile()));
 
+        // Experimental QF preferences
+        options.put(IFernflowerPreferences.PATTERN_MATCHING, "1");
+        options.put(IFernflowerPreferences.EXPERIMENTAL_TRY_LOOP_FIX, "1");
+
         Fernflower ff = new Fernflower(Zips::getBytes, new QfResultSaver(sourcesDestination::toFile, linemapDestination::toFile), options, new QfThreadIdLogger());
 
         for (Path library : metaData.libraries()) {
