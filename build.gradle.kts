@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "io.github.juuxel"
-version = "1.1.0"
+version = "1.2.0"
 
 val bundle by configurations.creating {
     isCanBeResolved = true
