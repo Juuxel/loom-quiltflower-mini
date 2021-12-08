@@ -36,6 +36,7 @@ public final class QuiltflowerDecompiler implements LoomDecompiler {
         // Experimental QF preferences
         options.put(IFernflowerPreferences.PATTERN_MATCHING, "1");
         options.put(IFernflowerPreferences.EXPERIMENTAL_TRY_LOOP_FIX, "1");
+        options.putAll(ReflectionUtil.<Map<String, String>>maybeGetFieldOrRecordComponent(metaData, "options").orElse(Map.of()));
 
         Fernflower ff = new Fernflower(Zips::getBytes, new QfResultSaver(sourcesDestination::toFile, linemapDestination::toFile), options, new QfThreadIdLogger());
 

@@ -30,7 +30,7 @@ configuration options but should still be completely fine for most users.
 ```diff
   plugins {
       id 'fabric-loom' version '0.10-SNAPSHOT'
-+     id 'io.github.juuxel.loom-quiltflower-mini' version '1.2.0'
++     id 'io.github.juuxel.loom-quiltflower-mini' version '1.2.1'
       id 'maven-publish'
   }
 ```
@@ -41,7 +41,7 @@ configuration options but should still be completely fine for most users.
 
 ### Runtime classpath
 
-> Added in LQFm 1.1.0.
+> Added in LQF*m* 1.1.0.
 
 You can add Quiltflower to the runtime classpath with a single property
 to use it for decompiling mixins:
