@@ -30,7 +30,7 @@ configuration options but should still be completely fine for most users.
 ```diff
   plugins {
       id 'fabric-loom' version '0.10-SNAPSHOT'
-+     id 'io.github.juuxel.loom-quiltflower-mini' version '1.2.1'
++     id 'io.github.juuxel.loom-quiltflower-mini' version '1.3.0'
       id 'maven-publish'
   }
 ```
