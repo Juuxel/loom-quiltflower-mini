@@ -1,5 +1,7 @@
 # loom-quiltflower-mini
 
+![Maven metadata](https://img.shields.io/maven-metadata/v/https/server.bbkr.space/artifactory/libs-release/io/github/juuxel/loom-quiltflower-mini/maven-metadata.xml.svg?label=latest%20plugin%20version&style=flat-square&color=49bfe0)
+
 A Loom addon that adds [Quiltflower](https://github.com/QuiltMC/Quiltflower) as a Loom decompiler
 for Loom 0.10.
 
