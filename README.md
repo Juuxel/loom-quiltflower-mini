@@ -2,6 +2,11 @@
 
 ![Maven metadata](https://img.shields.io/maven-metadata/v/https/server.bbkr.space/artifactory/libs-release/io/github/juuxel/loom-quiltflower-mini/maven-metadata.xml.svg?label=latest%20plugin%20version&style=flat-square&color=49bfe0)
 
+**loom-quiltflower-mini is deprecated. Please update your Loom to 0.11 or newer and use [loom-quiltflower](https://github.com/Juuxel/LoomQuiltflower/),
+which is much more customisable.**
+
+---
+
 A Loom addon that adds [Quiltflower](https://github.com/QuiltMC/Quiltflower) as a Loom decompiler
 for Loom 0.10.
 
